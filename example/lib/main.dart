@@ -13,7 +13,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  late final bool? _screenLockEnabled;
+  bool? _screenLockEnabled;
   bool _initialized = false;
   final _screenLockCheckerPlugin = ScreenLockChecker();
 
