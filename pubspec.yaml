@@ -1,0 +1,34 @@
+name: screen_lock_checker
+description: "A plugin for checking whether the device has a screen lock enabled."
+version: 0.1.0
+repository: https://github.com/splashbyte/screen_lock_checker
+issue_tracker: https://github.com/splashbyte/screen_lock_checker/issues
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: '>=3.3.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: dev.splashbyte.screen_lock_checker
+        pluginClass: ScreenLockCheckerPlugin
+      ios:
+        pluginClass: ScreenLockCheckerPlugin
+
+topics:
+  - device
+  - security
+  - information
+  - utils
